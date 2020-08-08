@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Upload Files</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <form action="uploadServlet" enctype="multipart/form-data" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputFile">Select File</label>
+                    <input type="file" id="exampleInputFile" name="fileName" size="30">
+                    <p class="help-block">Touch Touch!!!</p>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
